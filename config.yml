@@ -1,10 +1,10 @@
 baseURL: "https://opiuclv.github.io"
-title: PaperMod
+title: Dodai
 paginate: 5
 theme: PaperMod
 
 enableInlineShortcodes: true
-enableRobotsTXT: true
+enableRobotsTXT: false
 buildDrafts: false
 buildFuture: false
 buildExpired: false
@@ -21,69 +21,69 @@ languages:
         weight: 1
         menu:
             main:
-                - name: Archive
-                  url: archives
+                - name: 文章
+                  url: posts
                   weight: 5
-                - name: Search
-                  url: search/
-                  weight: 10
-                - name: Tags
+                # - name: Search
+                #   url: search/
+                #   weight: 10
+                - name: 標籤
                   url: tags/
                   weight: 10
-                - name: Categories
+                - name: 分類
                   url: categories/
                   weight: 10
 
-    fr:
-        languageName: ":fr:"
-        weight: 2
-        title: PaperModL2
-        profileMode:
-            enabled: true
-            title: PaperMod
+    # fr:
+    #     languageName: ":fr:"
+    #     weight: 2
+    #     title: PaperModL2
+    #     profileMode:
+    #         enabled: true
+    #         title: PaperMod
             # imageUrl: "#"
             # imageTitle: my image
             # imageWidth: 120
             # imageHeight: 120
-            subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
-            buttons:
-                - name: Blog
-                  url: posts
-                - name: Tags
-                  url: tags
-        menu:
-            main:
-                - name: Archive
-                  url: archives/
-                  weight: 5
-                - name: Tags
-                  url: tags
-                  weight: 10
-                - name: Categories
-                  url: categories
-                  weight: 10
-                - name: Series
-                  url: series
-                  weight: 10
-                - name: NullLink
-                  url: "#"
-                - name: NullLink2
-                  url: "#"
-                - name: NullLink3
-                  url: "#"
+            # subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+            # buttons:
+            #     - name: Blog
+            #       url: posts
+            #     - name: Tags
+            #       url: tags
+        # menu:
+        #      main:
+        #         - name: Archive
+        #           url: archives/
+        #           weight: 5
+        #         - name: Tags
+        #           url: tags
+        #           weight: 10
+        #         - name: Categories
+        #           url: categories
+        #           weight: 10
+                # - name: Series
+                #   url: series
+                #   weight: 10
+                # - name: NullLink
+                #   url: "#"
+                # - name: NullLink2
+                #   url: "#"
+                # - name: NullLink3
+                #   url: "#"
 
-    fa:
-        languagedirection: rtl
-        weight: 3
-        title: PaperMod RTL
-        homeInfoParams:
-            Title: "Hi there \U0001F44B"
-            Content: Welcome to RTL layout
-        menu:
-            main:
-                - name: Tags
-                  url: tags
-                  weight: 10
+    # fa:
+    #     languagedirection: rtl
+    #     weight: 3
+    #     title: PaperMod RTL
+    #     homeInfoParams:
+    #         Title: "Hi there \U0001F44B"
+    #         Content: Welcome to RTL layout
+    #    menu:
+    #         main:
+    #             - name: Tags
+    #               url: tags
+    #               weight: 10
 
 outputs:
     home:
@@ -99,13 +99,13 @@ params:
 
     defaultTheme: auto
     # disableThemeToggle: true
-    ShowShareButtons: true
+    ShowShareButtons: false
     ShowReadingTime: true
     # disableSpecial1stPost: true
-    displayFullLangName: true
+    displayFullLangName: false
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
-    ShowToc: true
+    ShowToc: false
     # comments: false
     images: ["papermod-cover.png"]
 
@@ -123,12 +123,9 @@ params:
               url: tags
 
     homeInfoParams:
-        Title: "PaperMod"
+        Title: "Dodai's blog"
         Content: >
-            Welcome to demo of hugo's theme PaperMod.
-            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-            - Do give a 🌟 on Github !
-            - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+            這裡記錄學習技術的筆記🌟 
     socialIcons:
         - name: github
           url: "https://github.com/adityatelange/hugo-PaperMod"
